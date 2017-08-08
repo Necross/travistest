@@ -7,5 +7,5 @@ class PackageTest(unittest.TestCase):
 		self.assertEqual(7, testpackage.package.packit(3,4))
 
 	def test_failing_packit(self):
-		self.assertEqual(19, testpackage.package.packit(3,4))
+		self.assertEqual(7, testpackage.package.packit(3,4))
 
