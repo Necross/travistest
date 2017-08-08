@@ -1,0 +1,9 @@
+language: python
+python:
+ - "2.6"
+install: 
+ - ./install-dependencies.sh
+script:
+ - pip setup.py bdist_wheel 
+ - pip install dist/*.whl
+ - nosetests -v ./testpackage/test
